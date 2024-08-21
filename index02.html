@@ -1,16 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engenharia de Software III - Develop</title>
+    <title>Operadores Lógicos e Estruturas de Lógica de Programação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
-    <lu>
-        <li>CI</li>
-        <li>CD</li>
-        <li>Engenharia</li>
-        <li>Software</li>
-    </lu>
+
+    <h1>Principais Operadores Lógicos e Estruturas de Lógica de Programação</h1>
+
+    <h2>Operadores Lógicos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Descrição</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>AND (&&)</strong></td>
+                <td>Retorna verdadeiro se ambas as expressões forem verdadeiras.</td>
+                <td><code>(x > 5) && (y < 10)</code></td>
+            </tr>
+            <tr>
+                <td><strong>OR (||)</strong></td>
+                <td>Retorna verdadeiro se pelo menos uma das expressões for verdadeira.</td>
+                <td><code>(x > 5) || (y < 10)</code></td>
+            </tr>
+            <tr>
+                <td><strong>NOT (!)</strong></td>
+                <td>Inverte o valor lógico da expressão.</td>
+                <td><code>!(x > 5)</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Estruturas de Lógica de Programação</h2>
+    <ul>
+        <li>
+            <strong>If / Else</strong>
+            <p>Permite a execução de um bloco de código se uma condição for verdadeira. O bloco <code>else</code> pode ser usado para executar um código alternativo se a condição for falsa.</p>
+            <pre><code>if (x > 5) {
+    // código se x for maior que 5
+} else {
+    // código se x for menor ou igual a 5
+}</code></pre>
+        </li>
+        <li>
+            <strong>Switch</strong>
+            <p>Executa um bloco de código entre várias opções baseadas no valor de uma variável.</p>
+            <pre><code>switch (x) {
+    case 1:
+        // código para x igual a 1
+        break;
+    case 2:
+        // código para x igual a 2
+        break;
+    default:
+        // código para qualquer outro valor de x
+}</code></pre>
+        </li>
+        <li>
+            <strong>For</strong>
+            <p>Executa um bloco de código repetidamente com base em uma condição inicial, condição de parada e incremento/decremento.</p>
+            <pre><code>for (int i = 0; i < 10; i++) {
+    // código a ser repetido
+}</code></pre>
+        </li>
+        <li>
+            <strong>While</strong>
+            <p>Executa um bloco de código enquanto uma condição for verdadeira.</p>
+            <pre><code>while (x < 10) {
+    // código enquanto x for menor que 10
+}</code></pre>
+        </li>
+        <li>
+            <strong>Do While</strong>
+            <p>Similar ao <code>while</code>, mas garante que o bloco de código seja executado pelo menos uma vez.</p>
+            <pre><code>do {
+    // código a ser repetido
+} while (x < 10);</code></pre>
+        </li>
+    </ul>
+
+    <footer>
+        <p>Obrigado pela visita!</p>
+    </footer>
+
 </body>
 </html>
